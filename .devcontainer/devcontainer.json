@@ -1,0 +1,32 @@
+{
+  "name": "template-rust-devcontainer",
+  "dockerComposeFile": [
+    "compose.yml"
+  ],
+  "remoteUser": "root",
+  "service": "app-dev",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "[rust]": {
+          "editor.formatOnSave": true,
+          "editor.formatOnPaste": true
+        },
+        "rust-analyzer.checkOnSave": true,
+        "rust-analyzer.check.command": "clippy",
+        "workbench.colorCustomizations": {
+          "titleBar.activeBackground": "#00ff371c", // タイトルバーの背景色
+        }
+      },
+      "extensions": [
+        "Gruntfuggly.todo-tree",
+        "streetsidesoftware.code-spell-checker",
+        "GitHub.vscode-pull-request-github",
+        "yzhang.markdown-all-in-one",
+        "mhutchie.git-graph",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
