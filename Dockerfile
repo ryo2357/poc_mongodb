@@ -9,5 +9,5 @@ RUN cargo build --release
 FROM debian:bookworm-slim AS runner
 
 WORKDIR /app
-COPY --from=builder /app/target/release/template-rust-devcontainer /app/template-rust-devcontainer
-CMD ["/app/template-rust-devcontainer"]
+COPY --from=builder /app/target/release/poc_mongodb /app/poc_mongodb
+CMD ["/app/poc_mongodb"]
