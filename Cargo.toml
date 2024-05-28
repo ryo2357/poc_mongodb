@@ -7,6 +7,7 @@ edition = "2021"
 
 [dependencies]
 futures = "0.3.30"
-mongodb = "2.8.2"
+mongodb = { version = "2.8.2", features = ["tokio-runtime"] }
 tokio = "1.37.0"
 serde = "1"
+anyhow = "1.0.86"
