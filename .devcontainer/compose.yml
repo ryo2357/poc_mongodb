@@ -6,13 +6,13 @@ services:
       dockerfile: devcontainer.dockerfile
     volumes:
       - ../:/workspace:cached
-    command: sleep infinityp
+    command: sleep infinity
     environment:
       TZ=Asia: Tokyopp
-      LOCAL_URI: mongodb://root:example@mongo:27017p
+      LOCAL_URI: mongodb://root:example@mongo:27017
     env_file: devcontainer.env
     networks:
-      - mongo_networkp
+      - mongo_network
     depends_on:
       - mongo
       - mongo-express
