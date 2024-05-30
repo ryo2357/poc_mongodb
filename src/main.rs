@@ -4,7 +4,7 @@ mod poc;
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    poc::usage_examples::find_document::find().await?;
+    poc::usage_examples::multi_insert::insert().await?;
     Ok(())
 }
 
