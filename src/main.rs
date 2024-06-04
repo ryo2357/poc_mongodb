@@ -4,7 +4,7 @@ mod poc;
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    poc::usage_examples::multi_insert::insert().await?;
+    poc::usage_examples::distinct::distinct().await?;
     Ok(())
 }
 

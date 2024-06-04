@@ -1,4 +1,11 @@
+pub mod count;
+pub mod delete;
+pub mod distinct;
 pub mod find_document;
 pub mod insert;
-pub mod multi_find;
-pub mod multi_insert;
+pub mod multiple_delete;
+pub mod multiple_find;
+pub mod multiple_insert;
+pub mod multiple_update;
+pub mod replace;
+pub mod update;
